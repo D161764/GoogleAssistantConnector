@@ -1,0 +1,11 @@
+ID: GoogleAssistantConnector
+_schema-version: '2.1'
+version: 0.0.1
+modules:
+  - name: connector
+    type: nodejs
+    path: connector
+    provides:
+      - name: connector_api
+        properties:
+          url: '${default-url}'
